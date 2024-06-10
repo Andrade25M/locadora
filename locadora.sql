@@ -52,3 +52,5 @@ SELECT L.codigo_locacao, V.modelo AS veiculo, V.cor, V.placa, V.diaria, C.nome A
 FROM Locacoes L
 INNER JOIN Veiculos V ON L.codigo_veiculo = V.codigo_veiculo
 INNER JOIN Clientes C ON L.cpf = C.cpf;
+
+SELECT * FROM locadora.detalheslocacoes;
